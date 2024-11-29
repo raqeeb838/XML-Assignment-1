@@ -1,0 +1,29 @@
+<!DOCTYPE books [
+    <!ELEMENT books (book+)>
+    <!ELEMENT book (title, author, price, publicationYear)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT publicationYear (#PCDATA)>
+    <!ENTITY currency "USD">
+]>
+<books>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <price>10.99 &currency;</price>
+        <publicationYear>1925</publicationYear>
+    </book>
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <price>8.99 &currency;</price>
+        <publicationYear>1949</publicationYear>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <price>7.99 &currency;</price>
+        <publicationYear>1960</publicationYear>
+    </book>
+</books>

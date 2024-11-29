@@ -1,0 +1,30 @@
+<!DOCTYPE inventory [
+    <!ELEMENT inventory (product+)>
+    <!ELEMENT product (name, category, price, quantity)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT quantity (#PCDATA)>
+    <!ATTLIST product id ID #REQUIRED>
+    <!ENTITY currency "USD">
+]>
+<inventory>
+    <product id="P001">
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <price>999.99 &currency;</price>
+        <quantity>50</quantity>
+    </product>
+    <product id="P002">
+        <name>Smartphone</name>
+        <category>Electronics</category>
+        <price>599.99 &currency;</price>
+        <quantity>150</quantity>
+    </product>
+    <product id="P003">
+        <name>Office Chair</name>
+        <category>Furniture</category>
+        <price>89.99 &currency;</price>
+        <quantity>200</quantity>
+    </product>
+</inventory>
